@@ -18,12 +18,13 @@ def display_message(message):
 
 
 def menu_analysis(self):
-    choices = ["data change", "Start an analysis", "Home"]
+    choices = ["Data change", "Start an analysis", "Home"]
     while True:
         choice = self.get_user_selection("What do you want to do?", choices)
         if choice == "Data change":
             data_choices = ["Full setup", "Select an element to change"]
             data_choice = self.get_user_selection("What do you want to do?", data_choices)
+            print(data_choice)
             if data_choice == "Full setup":
                 self.setup()
             elif data_choice == "Select an element to change":
