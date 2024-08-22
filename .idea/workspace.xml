@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="878c8489-bd1d-4a43-8dc4-70878a59f97c" name="Changes" comment="reformat files" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;jaVASScriptt&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/jaVASScriptt/opencap-processing-modified.git&quot;,
+    &quot;accountId&quot;: &quot;2c10668c-0c47-4812-af6b-3f32d7b6df51&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2jy351N5XqtJuikNHsRk5n2E3l6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NNL_L/OneDrive/Documents/opencap-processing&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NNL_L\OneDrive\Documents\opencap-processing-modified" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NNL_L\OneDrive\Documents\opencap-processing-modified\Controllers" />
+      <recent name="C:\Users\NNL_L\OneDrive\Documents\opencap-processing-modified\Utils" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-PY-241.18034.82" />
+        <option value="bundled-python-sdk-975db3bf15a3-2767605e8bc2-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-241.18034.82" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="878c8489-bd1d-4a43-8dc4-70878a59f97c" name="Changes" comment="" />
+      <created>1722345303090</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722345303090</updated>
+      <workItem from="1722345304133" duration="13448000" />
+      <workItem from="1722447351709" duration="596000" />
+      <workItem from="1722516201200" duration="1215000" />
+      <workItem from="1722604227291" duration="15794000" />
+      <workItem from="1722863924742" duration="5225000" />
+      <workItem from="1723051066841" duration="3647000" />
+      <workItem from="1723121456174" duration="4736000" />
+      <workItem from="1723207698733" duration="12460000" />
+      <workItem from="1723554430087" duration="20479000" />
+      <workItem from="1723644197969" duration="10345000" />
+      <workItem from="1723727063688" duration="5693000" />
+    </task>
+    <task id="LOCAL-00001" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1722346286512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722346286512</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refresh">
+      <option name="closed" value="true" />
+      <created>1722346686454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1722346686454</updated>
+    </task>
+    <task id="LOCAL-00003" summary="del jupiter Notebook">
+      <option name="closed" value="true" />
+      <created>1722347102693</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1722347102693</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Rangement éléments et suppression des exemples">
+      <option name="closed" value="true" />
+      <created>1722347795020</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1722347795020</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Rangement éléments et suppression des exemples">
+      <option name="closed" value="true" />
+      <created>1722347824456</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722347824456</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Reformat + rename classes">
+      <option name="closed" value="true" />
+      <created>1722354301114</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722354301114</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ajout des fonctionnalités d'enregistrement gait_analysis">
+      <option name="closed" value="true" />
+      <created>1722626722121</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722626722121</updated>
+    </task>
+    <task id="LOCAL-00008" summary="quelques modifications">
+      <option name="closed" value="true" />
+      <created>1723060976605</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723060976605</updated>
+    </task>
+    <task id="LOCAL-00009" summary="quelques améliorations">
+      <option name="closed" value="true" />
+      <created>1723139914952</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723139914952</updated>
+    </task>
+    <task id="LOCAL-00010" summary="quelques améliorations">
+      <option name="closed" value="true" />
+      <created>1723234021008</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1723234021008</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Ajout du choix des courbes pour le gait_analysis + correction comparaison inutile en cas de courbe seule">
+      <option name="closed" value="true" />
+      <created>1723570943730</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1723570943730</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ajout detection  de cycle automatique">
+      <option name="closed" value="true" />
+      <created>1723658904833</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1723658904833</updated>
+    </task>
+    <task id="LOCAL-00013" summary="connect disconnect api upgrade">
+      <option name="closed" value="true" />
+      <created>1723664380047</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1723664380047</updated>
+    </task>
+    <task id="LOCAL-00014" summary="reformat files">
+      <option name="closed" value="true" />
+      <created>1723839056113</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1723839056113</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="README.md" />
+    <MESSAGE value="refresh" />
+    <MESSAGE value="del jupiter Notebook" />
+    <MESSAGE value="Rangement éléments et suppression des exemples" />
+    <MESSAGE value="Reformat + rename classes" />
+    <MESSAGE value="ajout des fonctionnalités d'enregistrement gait_analysis" />
+    <MESSAGE value="quelques modifications" />
+    <MESSAGE value="quelques améliorations" />
+    <MESSAGE value="Ajout du choix des courbes pour le gait_analysis + correction comparaison inutile en cas de courbe seule" />
+    <MESSAGE value="ajout detection  de cycle automatique" />
+    <MESSAGE value="connect disconnect api upgrade" />
+    <MESSAGE value="reformat files" />
+    <option name="LAST_COMMIT_MESSAGE" value="reformat files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

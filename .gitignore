@@ -1,0 +1,13 @@
+__pycache__
+.env
+*.log
+*.ipynb_checkpoints
+
+*DS_Store
+
+.vscode/*
+
+utils_dynamic_simulations/opensim_ad/build-ExpressionGraphF*
+utils_dynamic_simulations/opensim_ad/build-ExternalFunctionF*
+utils_dynamic_simulations/opensim_ad/install-ExternalFunctionF*
+utils_dynamic_simulations/opensim_ad/opensimAD-install/*
