@@ -1,4 +1,4 @@
-# OpenCap Processing modified
+# OpenCap Analysis
 
 This code is a copy of OpenCap Processing, with some additional features and a better user experience. The original code
 can be found [here](https://github.com/stanfordnmbl/opencap-processing).
@@ -7,33 +7,48 @@ can be found [here](https://github.com/stanfordnmbl/opencap-processing).
 
 ### General
 
-1. Install [Anaconda](https://www.anaconda.com/)
-2. Check "ADD TO ENVIRONMENT VARIABLES"
-3. Open Terminal
-4. Create environment (python 3.11 recommended): `conda create -n opencap-processing python=3.11`
-5. Activate environment: `conda activate opencap-processing`
-6. Install OpenSim: `conda install -c opensim-org opensim=4.5=py311np123`
-    - Test that OpenSim was successfully installed:
-        - Start python: `python`
-        - Import OpenSim: `import opensim`
-            - If you don't get any error message at this point, you should be good to go.
-        - You can also double check which version you installed : `opensim.GetVersion()`
-        - Exit python: `quit()`
-    - Visit this [webpage](https://opensimconfluence.atlassian.net/wiki/spaces/OpenSim/pages/53116061/Conda+Package) for
-      more details about the OpenSim conda package.
-7. Clone the repository to your machine:
-    - Navigate to the directory where you want to download the code: eg. `cd Documents`. Make sure there are no spaces
-      in this path.
-    - Clone the repository: `git clone https://github.com/stanfordnmbl/opencap-processing.git`
-    - Navigate to the directory: `cd opencap-processing`
-8. Install required packages: `python -m pip install -r requirements.txt`
-9. Run `python main.py`
-
-### Muscle-driven simulations
-
-1. **Windows only**: Install [Visual Studio](https://visualstudio.microsoft.com/downloads/)
+#### Install [Anaconda](https://www.anaconda.com/)
+#### **Windows only**: Install [Visual Studio](https://visualstudio.microsoft.com/downloads/)
     - The Community variant is sufficient and is free for everyone.
     - During the installation, select the *workload Desktop Development with C++*.
     - The code was tested with the 2017, 2019, and 2022 Community editions.
-2. **Linux only**: Install OpenBLAS libraries
-    - `sudo apt-get install libopenblas-base`
+
+#### **Linux only**: Install OpenBLAS libraries
+- `sudo apt-get install libopenblas-base`
+
+#### Updating Environment Variables
+
+1. Open your file explorer
+
+![Step 1](img/etape1.png)
+
+2. Search for the `condabin` folder, usually located in `C:\Users\<YourName>\Anaconda3\`, and copy the path.
+
+![Step 2](img/etape2.png)
+
+3. Click on the search bar and look for "variables", then click on the first result that appears.
+
+![Step 3](img/etape3.png)
+
+4. Click on "Environment Variables".
+
+![Step 4](img/etape4.png)
+
+5. In the System Variables, find "Path" and double-click on it.
+
+![Step 5](img/etape5.png)
+
+6. Click on "New".
+
+![Step 6](img/etape6.png)
+
+7. Paste the path, then close everything.
+
+![Step 7](img/etape7.png)
+
+### Download and run the following `.bat` files in this order to complete the setup:
+
+1. [set_execution_policy.bat](https://github.com/LabNNL/opencap-analysis/blob/main/set_execution_policy.bat)
+2. [start_conda_setup.bat](https://github.com/LabNNL/opencap-analysis/blob/main/start_conda_setup.bat)
+
+### Open opencap-analysis in the folder you indicated in the previous step and run start.bat
