@@ -7,13 +7,20 @@ import pandas as pd
 class DataController:
     def __init__(self, analysis_type, json_file_path=None):
         self.analysis_type = analysis_type
-        self.json_file_path = json_file_path or 'data/parameters.json'  # Utilisation d'un chemin par défaut
+        self.json_file_path = json_file_path or 'data/parameters.json'
         self.parameters = self.load_parameters()
 
     def load_parameters(self):
         with open(self.json_file_path, 'r') as file:
             data = json.load(file)
         return data.get(self.analysis_type, {})
+
+    def all_parameters_empty(self):
+        """Vérifie si tous les paramètres sont vides."""
+        for key, value in self.parameters.items():
+            if value:  # Si la valeur n'est pas vide ou False
+                return False
+        return True
 
     def display(self):
         print()

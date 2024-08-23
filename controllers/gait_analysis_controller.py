@@ -37,6 +37,9 @@ class GaitAnalysisController:
 
         self.selected_columns = self.DataController.get('selected_columns')
 
+        if self.DataController.all_parameters_empty():
+            self.setup()
+
     def menu(self):
         menu_analysis(self)
 
@@ -177,7 +180,7 @@ class GaitAnalysisController:
     def modify_sessions_trials(self):
         ask_sessions = self.get_user_selection(
             message="Do you want to see your sessions or public sessions?",
-            choices=["My sessions", "Public sessions", "All sessions", "Manual input", "back"])
+            choices=["My sessions", "Public sessions", "All sessions", "Manual input"])
         trials = []
         removed = False
 
@@ -214,8 +217,6 @@ class GaitAnalysisController:
 
             elif question == "Add another trial":
                 removed = False
-            elif question == "back":
-                break
             elif question == "Continue":
                 print()
                 print("Trials modified successfully.")

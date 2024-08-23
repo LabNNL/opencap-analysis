@@ -1,39 +1,20 @@
 {
     "gait_analysis": {
-        "sessions_trials": [
-            {
-                "session_id": "b68b4507-edd3-44b3-9d1e-206dd784379a",
-                "trial_name": "6M"
-            },
-            {
-                "session_id": "b68b4507-edd3-44b3-9d1e-206dd784379a",
-                "trial_name": "10_pas_6_m"
-            }
-        ],
-        "selected_columns": [
-            "pelvis_list",
-            "pelvis_tx",
-            "hip_flexion_r",
-            "hip_adduction_r",
-            "hip_rotation_r",
-            "knee_angle_r"
-        ],
-        "analysis_folder": "C:/Users/NNL_L/OneDrive/Documents/Go"
+        "sessions_trials": [],
+        "selected_columns": [],
+        "analysis_folder": null
     },
     "muscles_analysis": {
-        "session_id": "77c05395-9454-472e-bb7b-d511dfdac515",
-        "trial_name": "marche",
-        "motion_type": "walking",
-        "time_window": [
-            2.8864583250000004,
-            4.07083334
-        ],
-        "repetition": "0",
-        "case": "0",
-        "treadmill_speed": 0,
-        "contact_side": "all",
-        "ipopt_tolerance": 1,
-        "mesh_density": 10,
-        "output_folder": "C:/Users/NNL_L/OneDrive/Documents/Go"
+        "session_id": null,
+        "trial_name": null,
+        "motion_type": null,
+        "time_window": [],
+        "repetition": null,
+        "case": null,
+        "treadmill_speed": null,
+        "contact_side": null,
+        "ipopt_tolerance": null,
+        "mesh_density": null,
+        "output_folder": null
     }
 }

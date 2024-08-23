@@ -45,6 +45,9 @@ class MuscleAnalysisController:
 
         self.sessions = []
 
+        if self.DataController.all_parameters_empty():
+            self.setup()
+
     def menu(self):
         menu_analysis(self)
 
