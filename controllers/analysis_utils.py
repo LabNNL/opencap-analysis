@@ -22,13 +22,15 @@ def menu_analysis(self):
     while True:
         choice = self.get_user_selection("What do you want to do?", choices)
         if choice == "Data change":
-            data_choices = ["Full setup", "Select an element to change"]
+            data_choices = ["Full setup", "Select an element to change", "back"]
             data_choice = self.get_user_selection("What do you want to do?", data_choices)
             print(data_choice)
             if data_choice == "Full setup":
                 self.setup()
             elif data_choice == "Select an element to change":
                 self.modify_parameters()
+            elif data_choice == "back":
+                pass
         elif choice == "Start an analysis":
             self.start_analysis()
         elif choice == "Home":

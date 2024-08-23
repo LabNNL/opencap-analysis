@@ -265,7 +265,7 @@ class MuscleAnalysisController:
     def modify_parameters(self):
         answer = self.get_user_selection("What do you want to modify??",
                                          ["Trial", "Motion type", "Time settings", "Case", "Treadmill speed",
-                                          "Contact side", "Complexity", "Output folder"])
+                                          "Contact side", "Complexity", "Output folder", "Back"])
 
         match answer:
             case "Trial":
@@ -284,3 +284,5 @@ class MuscleAnalysisController:
                 self.initialize_complexity()
             case "Output folder":
                 self.initialize_output_folder()
+            case "Back":
+                pass

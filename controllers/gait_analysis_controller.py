@@ -1,11 +1,10 @@
 import sys
 
-from tools.utils import *
-from tools.utils_plotting import plot_dataframe_with_shading, save_plots_to_excel, save_gait_metrics_to_excel
-
 from activity_analyses.gait_analysis import GaitAnalysis
 from controllers.analysis_utils import menu_analysis, modify_output_folder
 from controllers.data_controller import DataController
+from tools.utils import *
+from tools.utils_plotting import plot_dataframe_with_shading, save_plots_to_excel, save_gait_metrics_to_excel
 
 
 class GaitAnalysisController:
@@ -119,6 +118,7 @@ class GaitAnalysisController:
 
         self.plot_and_save_results()
         self.DataController.write_parameters_in_excel(self.analysis_folder)
+        self.analysis_folder = self.DataController.get('analysis_folder')
 
     def plot_and_save_results(self):
         if len(self.sessions_trials) > 1:
@@ -150,10 +150,14 @@ class GaitAnalysisController:
         self.DataController.set('analysis_folder', self.analysis_folder)
         self.modify_sessions_trials()
         self.DataController.set('sessions_trials', self.sessions_trials)
+        self.selected_columns = self.get_user_selection(
+            "Select the columns you want to display (space to check an element, enter to validate the list):",
+            choices=self.articular, type="multi")
+        self.DataController.set('selected_columns', self.selected_columns)
 
     def modify_parameters(self):
         answer = self.get_user_selection("What do you want to modify?",
-                                         ["Output folder", "Sessions Trials", "articular"])
+                                         ["Output folder", "Sessions Trials", "articular", "back"])
 
         match answer:
             case "Output folder":
@@ -163,15 +167,17 @@ class GaitAnalysisController:
                 self.modify_sessions_trials()
                 self.DataController.set('sessions_trials', self.sessions_trials)
             case "articular":
-                self.selected_columns = self.get_user_selection("Select the columns you want to display:",
-                                                                choices=self.articular, type="multi")
+                self.selected_columns = self.get_user_selection(
+                    "Select the columns you want to display (space to check an element, enter to validate the list):",
+                    choices=self.articular, type="multi")
                 self.DataController.set('selected_columns', self.selected_columns)
+            case "back":
+                pass
 
     def modify_sessions_trials(self):
         ask_sessions = self.get_user_selection(
             message="Do you want to see your sessions or public sessions?",
-            choices=["My sessions", "Public sessions", "All sessions", "Manual input"]
-        )
+            choices=["My sessions", "Public sessions", "All sessions", "Manual input", "back"])
         trials = []
         removed = False
 
@@ -208,6 +214,8 @@ class GaitAnalysisController:
 
             elif question == "Add another trial":
                 removed = False
+            elif question == "back":
+                break
             elif question == "Continue":
                 print()
                 print("Trials modified successfully.")
