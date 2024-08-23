@@ -134,6 +134,8 @@ def plot_dataframe_with_shading(AllGaitResults, analysis_folder, leg=None, xlabe
     combined_data_right = {}
     combined_data_left = {}
 
+    columns = []  # Initialiser columns en dehors de la boucle
+
     # Traiter chaque essai
     for trial_idx, trial_key in enumerate(AllGaitResults):
         session_id, trial_name = trial_key.split('_', 1)
@@ -151,7 +153,9 @@ def plot_dataframe_with_shading(AllGaitResults, analysis_folder, leg=None, xlabe
         mean_dataframe = [mean_dataframe_r, mean_dataframe_l]
         sd_dataframe = [sd_dataframe_r, sd_dataframe_l]
 
-        columns = [col for col in mean_dataframe[0].columns if col not in ['time', '_beta', 'mtp']]
+        # Initialiser ou mettre à jour les colonnes
+        if not columns:
+            columns = [col for col in mean_dataframe[0].columns if col not in ['time', '_beta', 'mtp']]
 
         if legs[0] == 'r':
             columns = [col for col in columns if not col.endswith('_l')]
@@ -192,6 +196,10 @@ def plot_dataframe_with_shading(AllGaitResults, analysis_folder, leg=None, xlabe
 
         # Ajouter les données au dictionnaire de résultats
         plot_data[trial_key] = [plot_data_right, plot_data_left]
+
+    # Vérifier si columns est vide avant de continuer
+    if not columns:
+        raise ValueError("No columns available for plotting. Please check the input data.")
 
     # Créer un seul graphique
     num_columns = len(columns)
@@ -243,9 +251,6 @@ def plot_dataframe_with_shading(AllGaitResults, analysis_folder, leg=None, xlabe
 
         print("")
         print(f"Plot graph saved to {analysis_folder}")
-
-        # Show the plot
-        plt.show()
 
     return plot_data
 

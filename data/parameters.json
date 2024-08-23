@@ -2,8 +2,12 @@
     "gait_analysis": {
         "sessions_trials": [
             {
-                "session_id": "354cab85-19bb-4e51-9d9f-212eb14e4bc6",
-                "trial_name": "testsurfacehigh"
+                "session_id": "71e37d11-ff19-422b-8a24-e1680fb539ae",
+                "trial_name": "marche"
+            },
+            {
+                "session_id": "b68b4507-edd3-44b3-9d1e-206dd784379a",
+                "trial_name": "10_pas_6_m"
             }
         ],
         "selected_columns": [
